@@ -9,7 +9,7 @@ header{
     flex-wrap: wrap;
     margin-top: 10px;
     border-top: 5px solid black;
-    height: 50px;
+
 }
 .logo{
     flex-basis: 35%;
@@ -38,6 +38,7 @@ a{
     
     height: 100vh;
     display: flex;
+    
 }
 .pra{
 margin-top: 50px;
@@ -64,10 +65,12 @@ button{
 }
 .section-two{
     background-color:slateblue;
-    height: 500px;
     display: flex;
     flex-wrap: wrap;
     justify-content:space-evenly;
+    flex-basis: 100%;
+
+ 
 
     
 }
@@ -78,6 +81,7 @@ button{
     width: 350px;
     background-color: brown;
     margin-top: 50px;
+    margin-bottom: 50px;
 }
 .left:hover{
     transform: scale(0.9);
@@ -88,6 +92,7 @@ button{
     width: 350px;
     background-color: magenta;
     margin-top: 50px;
+    margin-bottom: 50px;
 }
 .middle:hover{
     transform: scale(0.9);
@@ -99,6 +104,7 @@ button{
     width: 350px;
     background-color: brown;
     margin-top: 50px;
+    margin-bottom: 50px;
 }
 .right:hover{
     transform: scale(0.9);
@@ -107,6 +113,9 @@ button{
     background-color: coral;
     height: 80vh;
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex-basis: 100%;
   
 }
 .name h1{
@@ -117,10 +126,14 @@ button{
 }
 .section-four{
     background-color: teal;
-    height: 500px;
+ 
     display: flex;
     flex-wrap: wrap;
     justify-content:space-evenly;
+    
+    flex-direction: row;
+    flex-basis: 100%;
+  
 
 }
 
@@ -130,6 +143,7 @@ button{
     width: 350px;
     background-color: brown;
     margin-top: 50px;
+    margin-bottom: 50px;
 }
 .one:hover{
     transform: scale(0.9);
@@ -140,6 +154,7 @@ button{
     width: 350px;
     background-color: magenta;
     margin-top: 50px;
+    margin-bottom: 50px;
 }
 .two:hover{
     transform: scale(0.9);
@@ -151,6 +166,7 @@ button{
     width: 350px;
     background-color: brown;
     margin-top: 50px;
+    margin-bottom: 50px;
 }
 .three:hover{
     transform: scale(0.9);
@@ -167,5 +183,60 @@ button{
     font-family:sans-serif ;
  }
 
+
+
+ @media all and (max-width:768px){
+
+
+   
+    .header{
+        flex-basis: 100%;
+        flex-direction:column;
+        background-color: bisque;
+    }
+
+
+     .logo {
+        flex-direction: column;
+        align-items: center;
+        flex-basis: 100%;
+        order: 1;
+        text-align: center;
+    }
+
+    .menu {flex-basis: 100%;
+    order: 2;}
+
+    
+    .menu>ul{flex-direction: column;
+        align-items: center;
+        }
+
+   
+    .section-one{
+            flex-basis: 100%;
+       
+           
+                order: 3;
+                
+        }
+
+
+        .pra{margin-left: -40px;}
+    
+    .section-two{
+        flex-basis: 100%;
+        display: flex;
+        flex-direction:;
+    }
+
+    .section-four{
+        flex-basis: 100%;
+        
+    }
+    }
+
+
+  
 
 
